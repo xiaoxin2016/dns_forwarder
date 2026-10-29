@@ -88,7 +88,7 @@ GOOS=windows GOARCH=amd64 go build -o dns_forwarder.exe .
 
 ## 发版
 
-推送 `v` 开头的 tag 即触发 GitHub Actions（`.github/workflows/release.yml`）：运行测试，编译 Windows amd64 / 386 / arm64 版本，打包为 zip（含 exe、`hosts`、`dns.txt`、README）并创建 GitHub Release。
+推送 `v` 开头的 tag，或在 Actions 页面手动运行 Release 工作流并填写版本号（如 `v1.0.0`，会在所选分支的最新提交上创建该 tag），即触发 GitHub Actions（`.github/workflows/release.yml`）：运行测试，编译 Windows amd64 / 386 / arm64 版本，打包为 zip（含 exe、`hosts`、`dns.txt`、README）并创建 GitHub Release。
 
 ```bash
 git tag v1.0.0
