@@ -1,0 +1,5 @@
+/dns_forwarder
+*.exe
+/dist/
+dns_backup.json
+dns_backup.json.tmp

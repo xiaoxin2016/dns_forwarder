@@ -1,0 +1,12 @@
+# Linux hosts(5) 格式：IP 域名 [别名...]，# 之后为注释
+# 支持泛域名：*.example.com 匹配任意层级子域名（a.example.com、a.b.example.com），
+# 但不匹配 example.com 本身；如需同时解析主域名，请把两者写在同一行。
+# 精确记录优先于泛域名，多条泛域名时最长（最具体）的后缀优先。
+
+127.0.0.1   localhost
+::1         localhost
+
+# 示例：
+# 192.168.1.10   nas.lan
+# 192.168.1.20   example.com *.example.com
+# 0.0.0.0        ads.example.net
